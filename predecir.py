@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def clasificar():
      
-    file = open("modelo_knn.mod", "r")
+    file = open("modelo_knn.mod", "rb")
     knn = pickle.load(file)
     file.close()
      
