@@ -3,6 +3,7 @@
 from flask import Flask
 import pickle
 import numpy as np
+from sklearn.neighbors import KNeighborsClassifier
 
 app = Flask(__name__)
 
