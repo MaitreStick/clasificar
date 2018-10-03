@@ -1,1 +1,1 @@
-web: gunicorn predecir:app --log-file=-
+web: gunicorn predecir:app
