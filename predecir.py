@@ -3,7 +3,6 @@
 from flask import Flask
 import pickle
 import numpy as np
-import imp
 
 app = Flask(__name__)
 
