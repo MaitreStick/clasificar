@@ -3,16 +3,14 @@
 from flask import Flask
 import pickle
 import numpy as np
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.externals import joblib
 
 app = Flask(__name__)
 
 @app.route('/')
 def clasificar():
      
-    file = open("modelo_knn.mod", "rb")
-    knn = pickle.load(file)
-    file.close()
+    knn = joblib.load("modelo_knn.mod")
      
      
     sl = 4.2
