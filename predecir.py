@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask
-import pickle
 import numpy as np
 from sklearn.externals import joblib
+import sklearn
 
 app = Flask(__name__)
 
